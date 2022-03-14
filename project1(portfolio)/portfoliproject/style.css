@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FEEEE3;
+}
+header{
+    background-color: #40428E;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #FEEEE3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #FEEEE3;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div1 h1{
+    color: #40428E;
+    font-weight: 900;
+    font-size: 4em;
+}
+.div1 h3{
+    color: #40428E;
+    font-weight: 700;
+    font-size: 2.8em;
+}
+.div1 h2{
+    color: #40428E;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+.mypic img{
+  padding-left: 25%;
+  width: 500px;
+  height: 500px;
+}
+.div2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.aboutme{
+    width: 95%;
+    height: 350px;
+    border: #40428E 2px solid;
+    border-radius: 20px;
+    background-color: #40428E;
+    box-shadow: 0 5px 25px cornflowerblue;
+    transition: 0.7s ease;
+}
+.aboutme:hover{
+    transform: scale(1.1);
+}
+.aboutme h1{
+    color: #FEEEE3;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 3em;
+    text-align: center;
+}
+.aboutme p{
+    color: #FEEEE3;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 1.9em;  
+}
+.content{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FEEEE3;
+    background-color: #40428E;
+    width: 23em;
+    box-shadow: 0 5px 25px cornflowerblue;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+/* .ul{
+    font-weight: 900;
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+} */
+.icons{
+    font-size: 3em;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center; 
+    width: 22em;
+}
+.info h3{
+    font-size: 1em;
+}
+.info ul{
+    font-size: 1em;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #40428E;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.footer{
+    background-color: #40428E;
+    color: #FEEEE3;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer .social-icons a{
+    font-size: 1.8em;
+    color: #FEEEE3;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .5s ease;
+}
+.footer .social-icons a:hover{
+    transform: scale(1.1);
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contacts span{
+    padding-left: 20px;
+    
+}
+@media screen and (min-width: 480px) and (max-width: 768px){ 
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h1{
+        font-size: 1.5em;
+    }
+    .main h3{
+        font-size: 1.2em;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .aboutme p{
+        font-size: 1.5em;
+    }
+    .card h3{
+        font-size: 1.5em;
+    }
+    .card p{
+        font-size: .7em;
+    }
+    .footer .footer-title{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 479px){
+    body{
+        font-size: 5px;
+    }
+    header{
+        padding: 12px 10px;
+    }
+    .navigation a{
+        padding-left: 5px;
+    }
+    .main h1{
+        font-size: 3.2em;
+    padding-left: 10px;
+    }
+
+    .div1 h3{
+            font-size: 3em;
+        width: 100px;
+    }
+    .mypic img{
+        width: 225px;
+        height: 200px;
+    }
+    section{
+        padding: 40px 10px;
+    }
+    .aboutme{
+        width: 500px;
+        height: 220px;
+        margin: auto;
+    }
+    .aboutme h1{
+        font-size: 4em;
+    }
+    .aboutme p{
+        font-size: 3em;
+    }
+    .content{
+        font-size: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card{
+            width: 250px;
+    }
+    .info p{
+        font-size: .7em;
+    }
+    .title{
+        font-size: 6em;
+    }
+      .footer{
+        width: 105vw;
+        
+      }  
+           
+                
+                
+}
+    
+
+
+
